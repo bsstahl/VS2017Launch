@@ -31,10 +31,6 @@ namespace MeetingSystem.Data.FileSystem
             {
                 throw new MeetingSystem.Exceptions.DataUnavailableException($"Data file {_inputFilePath} not found", ex);
             }
-            catch (System.Security.SecurityException ex)
-            {
-                throw new MeetingSystem.Exceptions.PermissionException($"Unable to read file {_inputFilePath}", ex);
-            }
 
             var dataLines = data.Split(sep.ToCharArray());
             foreach (var dataLine in dataLines)
