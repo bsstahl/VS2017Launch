@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingSystem.Common", "MeetingSystem.Common\MeetingSystem.Common.csproj", "{757AAFA4-5016-4F1F-B0EE-B2679E890958}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingSystem.Data.FileSyst
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE420208-2337-4DAE-833B-38855A034E8B}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Documents\VS2017 Launch\2017Launch-Testing - BSS\Slide1.PNG = ..\..\..\..\Documents\VS2017 Launch\2017Launch-Testing - BSS\Slide1.PNG
+		Intro.PNG = Intro.PNG
 	EndProjectSection
 EndProject
 Global
