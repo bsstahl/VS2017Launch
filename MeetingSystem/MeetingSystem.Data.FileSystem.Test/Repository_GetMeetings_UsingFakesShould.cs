@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.QualityTools.Testing.Fakes;
 using System.Linq;
-using Microsoft.Pex.Framework;
 
 namespace MeetingSystem.Data.FileSystem.Test
 {

@@ -12,27 +12,6 @@ namespace MeetingSystem.Data.FileSystem.Test
     {
         string _sourceDataFile = @".\April2017.csv";
 
-        [TestMethod, ExpectedException(typeof(Exceptions.DataUnavailableException))]
-        public void ThrowADataUnavailableExceptionIfTheSourceDataFilePathIsNull()
-        {
-            var sourceRepo = new MeetingSystem.Data.FileSystem.Repository(null);
-            var meetings = sourceRepo.GetMeetings(DateTime.MinValue, DateTime.MaxValue);
-        }
-
-        [TestMethod, ExpectedException(typeof(Exceptions.DataUnavailableException))]
-        public void ThrowADataUnavailableExceptionIfTheSourceDataFilePathIsNotAValidMonth()
-        {
-            var sourceRepo = new MeetingSystem.Data.FileSystem.Repository("NotAValidMonth.csv");
-            var meetings = sourceRepo.GetMeetings(DateTime.MinValue, DateTime.MaxValue);
-        }
-
-        [TestMethod, ExpectedException(typeof(Exceptions.DataUnavailableException))]
-        public void ThrowADataUnavailableExceptionIfTheSourceDataFilePathIsNotAValidMonthAndVeryShort()
-        {
-            var sourceRepo = new MeetingSystem.Data.FileSystem.Repository("A.csv");
-            var meetings = sourceRepo.GetMeetings(DateTime.MinValue, DateTime.MaxValue);
-        }
-
         [TestMethod]
         public void ReturnTheCorrectNumberOfMeetingsForTheApril2017File()
         {
@@ -77,6 +56,27 @@ namespace MeetingSystem.Data.FileSystem.Test
             var meetings = sourceRepo.GetMeetings(startDate, endDate);
             var actual = meetings.OrderByDescending(m => m.StartDateTime).First();
             Assert.AreEqual(expected, actual.StartDateTime);
+        }
+
+        [TestMethod, ExpectedException(typeof(Exceptions.DataUnavailableException))]
+        public void ThrowADataUnavailableExceptionIfTheSourceDataFilePathIsNull()
+        {
+            var sourceRepo = new MeetingSystem.Data.FileSystem.Repository(null);
+            var meetings = sourceRepo.GetMeetings(DateTime.MinValue, DateTime.MaxValue);
+        }
+
+        [TestMethod, ExpectedException(typeof(Exceptions.DataUnavailableException))]
+        public void ThrowADataUnavailableExceptionIfTheSourceDataFilePathIsNotAValidMonth()
+        {
+            var sourceRepo = new MeetingSystem.Data.FileSystem.Repository("NotAValidMonth.csv");
+            var meetings = sourceRepo.GetMeetings(DateTime.MinValue, DateTime.MaxValue);
+        }
+
+        [TestMethod, ExpectedException(typeof(Exceptions.DataUnavailableException))]
+        public void ThrowADataUnavailableExceptionIfTheSourceDataFilePathIsNotAValidMonthAndVeryShort()
+        {
+            var sourceRepo = new MeetingSystem.Data.FileSystem.Repository("A.csv");
+            var meetings = sourceRepo.GetMeetings(DateTime.MinValue, DateTime.MaxValue);
         }
 
         [TestMethod, ExpectedException(typeof(Exceptions.DataUnavailableException))]
