@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingSystem.Common", "MeetingSystem.Common\MeetingSystem.Common.csproj", "{757AAFA4-5016-4F1F-B0EE-B2679E890958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingSystem.Data.FileSystem", "MeetingSystem.Data.FileSystem\MeetingSystem.Data.FileSystem.csproj", "{FE4A0A9D-C92C-4746-8ADD-729D196BC082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingSystem.Data.FileSystem.Test", "MeetingSystem.Data.FileSystem.Test\MeetingSystem.Data.FileSystem.Test.csproj", "{52948E1D-C40F-4F9B-BD68-35073B7A83EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE420208-2337-4DAE-833B-38855A034E8B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\VS2017 Launch\2017Launch-Testing - BSS\Slide1.PNG = ..\..\..\..\Documents\VS2017 Launch\2017Launch-Testing - BSS\Slide1.PNG
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{757AAFA4-5016-4F1F-B0EE-B2679E890958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757AAFA4-5016-4F1F-B0EE-B2679E890958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757AAFA4-5016-4F1F-B0EE-B2679E890958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757AAFA4-5016-4F1F-B0EE-B2679E890958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE4A0A9D-C92C-4746-8ADD-729D196BC082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4A0A9D-C92C-4746-8ADD-729D196BC082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE4A0A9D-C92C-4746-8ADD-729D196BC082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4A0A9D-C92C-4746-8ADD-729D196BC082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52948E1D-C40F-4F9B-BD68-35073B7A83EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52948E1D-C40F-4F9B-BD68-35073B7A83EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52948E1D-C40F-4F9B-BD68-35073B7A83EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52948E1D-C40F-4F9B-BD68-35073B7A83EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
