@@ -2,7 +2,6 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 using System.Collections.Generic;
-using Microsoft.QualityTools.Testing.Fakes;
 
 namespace MeetingSystem.Data.FileSystem.Test
 {
@@ -65,31 +64,6 @@ namespace MeetingSystem.Data.FileSystem.Test
             var endDate = startDate.AddDays(1);
             var sourceRepo = new MeetingSystem.Data.FileSystem.Repository(bogusFilePath);
             var meetings = sourceRepo.GetMeetings(startDate, endDate);
-        }
-
-        [TestMethod]
-        public void ReturnOneMeetingFromASingleLineFile()
-        {
-            const string filePath = "April2017.abc";
-
-            var startDate = DateTime.MinValue;
-            var endDate = DateTime.MaxValue;
-
-            int expected = 5;
-            int actual = 0;
-
-            using (ShimsContext.Create())
-            {
-                System.IO.Fakes.ShimFile.ReadAllTextString =
-                    p => throw new System.Security.SecurityException("Test Exception");
-
-                var sourceRepo = new MeetingSystem.Data.FileSystem.Repository(filePath);
-                var meetings = sourceRepo.GetMeetings(startDate, endDate);
-                actual = meetings.Count();
-            }
-
-            Assert.AreEqual(expected, actual);
-
         }
 
     }
